@@ -1,7 +1,8 @@
 <template>
 <v-container
     fluid
-    class="secondary">
+    class="secondary"
+    id="about">
   <v-row no-gutters >
     <v-spacer></v-spacer>
     <v-col align-start cols="4" class="ma-4">
@@ -29,7 +30,7 @@
 <script>
 
 export default {
-  name: "Presentation",
+  name: "About",
 
   computed: {
     graduatePicturePath(){

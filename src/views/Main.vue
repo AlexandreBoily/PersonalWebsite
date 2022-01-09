@@ -3,14 +3,14 @@
     <NavBar ></NavBar>
     <v-main>
       <Home />
-      <Presentation/>
+      <About/>
     </v-main>
   </v-app>
 </template>
 
 <script>
 import Home from '@/components/Home';
-import Presentation from "@/components/About";
+import About from "@/components/About";
 import NavBar from "@/components/NavBar";
 
 export default {
@@ -18,7 +18,7 @@ export default {
 
   components: {
     NavBar,
-    Presentation,
+    About,
     Home,
   },
 
