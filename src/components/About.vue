@@ -17,6 +17,9 @@
             I am a software engineer graduate from Laval University, interested in working with <b>Web Development, Cloud infrastructures and Video Games</b>.
         </v-card-text>
         <v-divider></v-divider>
+        <v-card-actions>
+          <v-btn class="secondary black--text" href="AlexandreBoily_Resume.pdf" download>Download resume</v-btn>
+        </v-card-actions>
       </v-card>
     </v-col>
     <v-spacer></v-spacer>
@@ -34,10 +37,6 @@ export default {
       return require("@/assets/photo-finissant.jpg")
     }
   },
-
-  data: () => ({
-
-  }),
 }
 </script>
 

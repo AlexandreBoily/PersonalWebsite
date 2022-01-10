@@ -12,14 +12,30 @@
               My name is Alexandre, and welcome to my personal website!
             </h2>
             <v-spacer/>
-            <v-chip class="mx-2" @click="openInNewTab('https://www.linkedin.com/in/alexandre-boily-25950b207/')" link>
-              <v-icon>mdi-linkedin</v-icon>
+            <v-chip
+                class="mx-2"
+                @click="openInNewTab('https://www.linkedin.com/in/alexandre-boily-25950b207/')"
+                link
+                icon
+                large
+            >
+              <v-icon large>mdi-linkedin</v-icon>
             </v-chip>
-            <v-chip class="mx-2" @click="openInNewTab('https://github.com/AlexandreBoily')" link>
-              <v-icon>mdi-github</v-icon>
+            <v-chip
+                class="mx-2"
+                @click="openInNewTab('https://github.com/AlexandreBoily')"
+                link
+                large
+            >
+              <v-icon large>mdi-github</v-icon>
             </v-chip>
-            <v-chip class="mx-2" @click="openInNewTab('https://twitter.com/AlexandreBoily')" link>
-              <v-icon>mdi-twitter</v-icon>
+            <v-chip
+                class="mx-2"
+                @click="openInNewTab('https://twitter.com/AlexandreBoily')"
+                link
+                large
+            >
+              <v-icon large>mdi-twitter</v-icon>
             </v-chip>
             <v-spacer/>
           </v-col>

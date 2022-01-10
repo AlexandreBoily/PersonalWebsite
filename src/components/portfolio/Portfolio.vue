@@ -12,8 +12,8 @@
     <v-col align-self="center">
       <Project>
         <template #title>This Website!</template>
-        <template #description>This website is forever a work in progress but is useful to showcase what I'm
-          working on currently.</template>
+        <template #description>This website is forever a work in progress but is useful to showcase what I'm currently
+          working on.</template>
         <template #links>
           <v-chip
               color="black"
