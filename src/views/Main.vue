@@ -24,6 +24,10 @@ import Portfolio from "@/components/portfolio/Portfolio";
 export default {
   name: 'App',
 
+  created() {
+    document.title="Alexandre Boily"
+  },
+
   components: {
     Portfolio,
     NavBar,
