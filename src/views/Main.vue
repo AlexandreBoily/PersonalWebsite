@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <NavBar ></NavBar>
+    <NavBar></NavBar>
     <v-main>
-      <Home />
+      <Home/>
       <About/>
       <Portfolio/>
     </v-main>

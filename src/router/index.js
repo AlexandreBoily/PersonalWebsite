@@ -16,16 +16,14 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  scrollBehavior: (to, from, savedPosition) => {
+  scrollBehavior: (to) => {
     let scrollTo = 0
 
     if (to.hash) {
       scrollTo = to.hash
-    } else if (savedPosition){
-      scrollTo = savedPosition.y
     }
 
-    return goTo(scrollTo)
+    goTo(scrollTo)
   },
   routes
 })

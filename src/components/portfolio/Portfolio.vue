@@ -18,21 +18,21 @@
           <v-chip
               color="black"
               text-color="white"
-              href="https://github.com/AlexandreBoily/PersonalWebsite"
-              target="_blank"
+              @click="openInNewTab('https://github.com/AlexandreBoily/PersonalWebsite')"
+              link
           >
             <v-icon class="mr-2" >mdi-github</v-icon>
             Source
           </v-chip>
         </template>
         <template #technologies>
-          <v-chip href="https://vuejs.org/" target="_blank">
+          <v-chip class="ma-2" @click="openInNewTab('https://vuejs.org/')" link>
             <v-avatar>
               <img :src="vueJsLogo">
             </v-avatar>
             Vue.js
           </v-chip>
-          <v-chip href="https://vuetifyjs.com/en/" target="_blank">
+          <v-chip class="ma-2" @click="openInNewTab('https://vuetifyjs.com/en/')" link>
             <v-avatar>
               <img :src="vuetifyLogo">
             </v-avatar>
@@ -51,6 +51,12 @@ import Project from "@/components/portfolio/Project";
 export default {
   name: "Portfolio",
   components: {Project},
+
+  data: () => ({
+    openInNewTab(url){
+      window.open(url, '_blank').focus();
+    }
+  }),
 
   computed: {
     vueJsLogo(){

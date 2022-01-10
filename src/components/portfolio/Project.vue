@@ -10,18 +10,14 @@
   </v-card-text>
   <v-row align-content="center" class="mb-4">
     <v-spacer/>
-    <v-chip-group>
-      <slot name="links"/>
-    </v-chip-group>
+    <slot name="links"/>
     <v-spacer/>
   </v-row>
   <v-divider></v-divider>
   <v-subheader>Technologies Used :</v-subheader>
   <v-row align-content="center" class="mb-4">
     <v-spacer/>
-    <v-chip-group>
-      <slot name="technologies"/>
-    </v-chip-group>
+    <slot name="technologies"/>
     <v-spacer/>
   </v-row>
 </v-card>

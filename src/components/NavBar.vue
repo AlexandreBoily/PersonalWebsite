@@ -5,7 +5,14 @@
       dense
       elevate-on-scroll
   >
-    <v-app-bar-title class="ma-2">Alexandre Boily</v-app-bar-title>
+    <v-app-bar-title
+        class="ma-2 text-no-wrap"
+        style="cursor: pointer"
+    >
+      <div @click="$router.replace({name:'Home', hash:'#top'}).catch(() => {})">
+        Alexandre Boily
+      </div>
+    </v-app-bar-title>
     <v-spacer></v-spacer>
     <v-btn
         depressed
@@ -14,6 +21,7 @@
           name: 'Home',
           hash: '#about'
         }"
+        replace
     >
       About Me
     </v-btn>
@@ -25,6 +33,7 @@
           name: 'Home',
           hash: '#portfolio'
         }"
+        replace
     >
       Portfolio
     </v-btn>
@@ -33,7 +42,13 @@
 
 <script>
 export default {
-  name: "AppBar"
+  name: "AppBar",
+
+  data: () => ({
+    goHome(){
+      this.$router.replace('/')
+    }
+  }),
 }
 </script>
 
