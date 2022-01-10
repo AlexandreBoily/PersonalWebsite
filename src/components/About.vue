@@ -17,9 +17,6 @@
             I am a software engineer graduate from Laval University, interested in working with <b>Web Development, Cloud infrastructures and Video Games</b>.
         </v-card-text>
         <v-divider></v-divider>
-        <v-card-text>
-          My
-        </v-card-text>
       </v-card>
     </v-col>
     <v-spacer></v-spacer>
